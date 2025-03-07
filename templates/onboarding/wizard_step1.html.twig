@@ -1,0 +1,28 @@
+<div class="form-step" data-form-wizard-target="step">
+    <h4>User Information</h4>
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+        <div class="invalid-feedback d-block" data-field-error-target="name"></div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+        <div class="invalid-feedback d-block" data-field-error-target="email"></div>
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" id="phone" name="phone" class="form-control" required>
+        <div class="invalid-feedback d-block" data-field-error-target="phone"></div>
+    </div>
+    <div class="mb-3">
+        <label for="subscriptionType" class="form-label">Subscription Type</label>
+        <select id="subscriptionType" name="subscriptionType" class="form-select" data-action="change->form-wizard#subscriptionChanged">
+            <option value="free">Free</option>
+            <option value="premium">Premium</option>
+        </select>
+    </div>
+    <div class="d-flex justify-content-end mt-3">
+        <button type="button" class="btn btn-primary" data-action="click->form-wizard#next">Next</button>
+    </div>
+</div>

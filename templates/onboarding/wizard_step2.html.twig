@@ -1,0 +1,46 @@
+<div class="form-step d-none" data-form-wizard-target="step">
+    <h4>Address Information</h4>
+    <div class="mb-3">
+        <label for="addressLine1" class="form-label">Address Line 1</label>
+        <input type="text" id="addressLine1" name="addressLine1" class="form-control" required>
+         <div class="invalid-feedback d-block" data-field-error-target="addressLine1"></div>
+    </div>
+    <div class="mb-3">
+        <label for="addressLine2" class="form-label">Address Line 2 (Optional)</label>
+        <input type="text" id="addressLine2" name="addressLine2" class="form-control">
+        <div class="invalid-feedback d-block" data-field-error-target="addressLine2"></div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col-md-6">
+            <label for="city" class="form-label">City</label>
+            <input type="text" id="city" name="city" class="form-control" required>
+            <div class="invalid-feedback d-block" data-field-error-target="city"></div>
+        </div>
+        <div class="mb-3 col-md-6">
+            <label for="postalCode" class="form-label">Postal Code</label>
+            <input type="text" id="postalCode" name="postalCode" class="form-control" required>
+            <div class="invalid-feedback d-block" data-field-error-target="postalCode"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col-md-6">
+            <label for="state" class="form-label">State/Province</label>
+            <input type="text" id="state" name="state" class="form-control" required>
+            <div class="invalid-feedback d-block" data-field-error-target="state"></div>
+        </div>
+        <div class="mb-3 col-md-6">
+            <label for="country" class="form-label">Country</label>
+            <select id="country" name="country" class="form-select" data-action="change->form-wizard#countryChanged">
+                <option value="AE">United Arab Emirates</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                {# Add more countries as needed or fetch from API and list here#}
+            </select>
+            <div class="invalid-feedback d-block" data-field-error-target="country"></div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-action="click->form-wizard#previous">Previous</button>
+        <button type="button" class="btn btn-primary" data-action="click->form-wizard#next">Next</button>
+    </div>
+</div>

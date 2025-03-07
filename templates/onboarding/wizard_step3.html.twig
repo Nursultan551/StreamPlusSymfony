@@ -1,0 +1,24 @@
+<div class="form-step d-none" data-form-wizard-target="step">
+    <h4>Payment Information</h4>
+    <div class="mb-3">
+        <label for="creditCardNumber" class="form-label">Credit Card Number</label>
+        <input type="text" id="creditCardNumber" name="creditCardNumber" class="form-control">
+        <div class="invalid-feedback d-block" data-field-error-target="creditCardNumber"></div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col-md-6">
+            <label for="expirationDate" class="form-label">Expiration Date (MM/YY)</label>
+            <input type="text" id="expirationDate" name="expirationDate" class="form-control" data-action="input->form-wizard#formatExpirationDate">
+            <div class="invalid-feedback d-block" data-field-error-target="expirationDate"></div>
+        </div>
+        <div class="mb-3 col-md-6">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" id="cvv" name="cvv" class="form-control">
+            <div class="invalid-feedback d-block" data-field-error-target="cvv"></div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-action="click->form-wizard#previous">Previous</button>
+        <button type="button" class="btn btn-primary" data-action="click->form-wizard#next">Next</button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}Onboarding Wizard{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>StreamPlus Onboarding</h2>
+    <br/>
+    <form id="onboarding-form" data-controller="form-wizard" data-action="submit->form-wizard#submitForm">
+        {# Include each step template here #}
+        {% include 'onboarding/wizard_step1.html.twig' %}
+        {% include 'onboarding/wizard_step2.html.twig' %}
+        {% include 'onboarding/wizard_step3.html.twig' %}
+        {% include 'onboarding/wizard_step4.html.twig' %}
+    </form>
+</div>
+{% endblock %}
