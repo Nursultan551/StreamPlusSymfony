@@ -37,7 +37,7 @@ These instructions will help you set up and run the application locally.
 
    ```bash
    git clone git@github.com:Nursultan551/StreamPlusSymfony.git
-   cd streamplus-onboarding-symfony
+   cd StreamPlusSymfony
    ```
 
 2. **Install PHP dependencies:**
