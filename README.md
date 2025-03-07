@@ -49,12 +49,15 @@ These instructions will help you set up and run the application locally.
 3. **Install frontend dependencies** (if applicable):
 
    ```bash
-   yarn install
-   # or
    npm install
    ```
+4. **Build artifacts** (if applicable):
 
-4. **Configure your environment variables:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Configure your environment variables:**
 
    - Copy the `.env` file to `.env.local`:
    
